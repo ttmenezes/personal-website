@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+
+    /* background: #000;
+    color: #0f0;
+    outline: solid #f00 1px; */
+}
+
+body {
+    font-family: "Montserrat";
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(240deg, #7e8ca5, #b4dbd7);
+    /* background: linear-gradient(240deg, #1e8dc0, #3ba087); */
+    position: relative;
+    z-index: 1;
+}
+
+b {
+  font-weight: 700;
+}
+
+img {
+  float: left;
+  height: 100%;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-shadow: 2px 2px 10px #000000;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
+.intro-text h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.intro-text h3 {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.banner {
+    background-color: rgb(219, 213, 199);
+    z-index: -2;
+}
+
+.banner img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.836);
+    color: black;
+    border-radius: 10px;
+    margin:30px;
+    margin-top: 0;
+    padding: 30px;
+    width: 60%;
+    /* height: 50vh; */
+}
+
+/* Grow - from hover.css */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.icon-item {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-item img {
+  margin-right: 10px;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.icons-container img {
+  margin: 5px;
+}
+
+.interest-block {
+  margin: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #6a7271;
+  border-radius: 3px;
+}
+
+.link:hover {
+  background-color: #63b9af85;
+}
+
+.list-container {
+  padding:30px;
+  font-size: 20px;
+  max-width: 100%;
+  display: flex;
+}
+
+.list-container li {
+  padding-bottom: 10px;
+}
+
+.press-container {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.soc-media {
+  /* width: 33%; */
+  margin: 10px;
+  /* height: 100%; */
+}
+
+.subheading {
+  margin: 20px;
+  width:90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #000000;
+  font-size: x-large;
+}
+
+.subsubheading {
+  margin: 20px;
+  width:90%;
+  max-width: 100vw;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #000000;
+  font-size: x-large;  
+}
+
+.subsection {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+.text-container {
+  width: 50%;
+}
+
+.text-container h3 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.tile {
+  display: block;
+  width: 20vmin;
+  height: 20vmin;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.tile-container {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container iframe {
+  max-width: 90vw;
+}
+
+#head {
+    height: 50vmin;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    z-index: -3;
+
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
+#about {
+  background-color: #b1bed5;
+}
+
+#camera-container {
+  height: 460px;
+  overflow: hidden;
+}
+
+#contact {
+  background-color: #dfdfdf;
+}
+
+#flags {
+  width: 50%;
+}
+
+#flags-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#interests {
+  background-color: #bfd8d5;
+}
+
+#interests h3 {
+  font-size: 30px;
+  color: #636363;
+}
+
+#interests-container {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#modal-technologies {
+  display: flex;
+  flex-direction: column;
+}
+
+#outline {
+    height: 50vmin;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    z-index: -4;
+}
+
+#photo-video-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#video-container {
+  background-color: black;
+  width: min-content;
+  margin:10px;
+}
+
+#portfolio {
+  background-color: #f4f3f3;
+}
+
+#portfolio-heading {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  color: #7e8ca5;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  letter-spacing: 0.2em;
+}
+
+#press {
+  background-color: #bfd8d5;
+}
+
+#recognition {
+  /* background-color: #f4f3f3; */
+  background-color: #b1bed5;
+}
+
+#skills {
+  background-color: #bfd8d5;
+}
+
+#soccer {
+  position: relative;
+  left: 40%;
+  width: auto;
+  height: 60vh;
+  transition:left 0.3s linear;
+}
+
+#soccer-outline {
+  position: absolute;
+  left: 40%;
+  width: auto;
+  height: 60vh;
+  transition:left 0.2s linear;
+}
+
+#tm-logo {
+  position: absolute;
+  left: 55%;
+  top:57%;
+  width: 10vw;
+  height: auto;
+  animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+  
+@-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+/* fade outline out */
+@-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+}
+  
+@-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+}
+  
+@-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+}
+  
+@-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .intro-text h1 {
+    font-size: 40px;
+  }
+  .intro-text h3 {
+    font-size: 25px;
+  }
+  .list-container {
+    padding: 0px;
+  }
+  .modal h2 {
+    font-size: 32px;
+  }
+  .subsection {
+    padding: 5px;
+  }
+  .text-container {
+    width: 90%;
+  }
+  .tile-container {
+    flex-direction: column;
+  }
+  .tile {
+    height: 50vmin;
+    width: 50vmin;
+  }
+  .card {
+    width: 99%
+  }
+  #head {
+    left: 20%;
+  }
+  #outline {
+    left: 30%;
+  }
+  #tm-logo {
+    left: 16%;
+    top: 40%;
+  }
+  #modal-technologies {
+    justify-content: center;
+  }
+  #modal-technologies p {
+    font-size: 16px;
+  }
+  #photo-video-container {
+    flex-direction: column;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  #soccer {
+    height: 30vh;
+  }
+  #soccer-outline {
+    height: 30vh;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal *{
+  color: #7e8ca5;
+  margin-top: 10px;
+}
+
+.modal h2 {
+  font-size: 34px;
+  color: #3d7e76;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.modal p {
+  font-size: 20px;
+  /* font-size: 5vmin; */
+  color: #465774;
+}
+
+.modal li {
+  margin-left: 60px;
+  font-size: 23px;
+  color: #465774;
+}
+
+.modal a {
+  font-size: 23px;
+  color: #465774;
+  text-decoration: none;
+}
+
+.modal h3 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.modal h4 {
+  font-size: 28px;
+  /* font-size: 7vw; */
+  color: #61a39b;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  color: #7e8ca5;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  color: #7e8ca5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modal-footer a {
+  display: flex;
+  align-items: center;
+}
+
+.modal-footer img {
+  margin-right: 10px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* end of Modal */
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  display: flex;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text*/
+  position: absolute;
+  top: -30%;
+  left: -100%;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* End of Tooltip container */
