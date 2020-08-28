@@ -114,6 +114,19 @@ img {
   margin: 30px;
 }
 
+.learn-more {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #000000;
+}
+
+.learn-more a {
+  text-decoration: none;
+  border-radius: 3px;
+}
+
 .link {
   text-decoration: none;
   color: #6a7271;

@@ -5,11 +5,15 @@ document.onreadystatechange = function () {
             "body").style.visibility = "hidden";
         document.querySelector(
             "#loader-container").style.visibility = "visible";
+        document.querySelector(
+            "body").style.overflowY = "hidden";
     } else {
         document.querySelector(
             "#loader-container").style.display = "none";
         document.querySelector(
             "body").style.visibility = "visible";
+        document.querySelector(
+            "body").style.overflowY = "scroll";
     }
 };
 
@@ -231,10 +235,13 @@ for (const project in projectDescriptions) {
         }
     });
 
-
     tileContainer.appendChild(tile);
 }
 
+// add blank targets to every anchor tag
+document.querySelectorAll('a').forEach(a => {
+    a.target = '_blank';
+})
 
 // soccer outline movement
 const soccerCont = document.querySelector('#soccer-container');
