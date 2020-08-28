@@ -1,3 +1,19 @@
+// loader - credit: https://www.geeksforgeeks.org/how-to-show-page-loading-div-until-the-page-has-finished-loading/
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+            "body").style.visibility = "hidden";
+        document.querySelector(
+            "#loader-container").style.visibility = "visible";
+    } else {
+        document.querySelector(
+            "#loader-container").style.display = "none";
+        document.querySelector(
+            "body").style.visibility = "visible";
+    }
+};
+
+
 // START MODAL
 // project descriptions to appear in modal
 const projectDescriptions = {
@@ -47,7 +63,7 @@ const projectDescriptions = {
         description: 'Created a homepage for my browser that fetches weather data for my location using an API from the National Weather Service. The site also has a to-do list of items I want to do. The to-do items are stored in LocalStorage so that they stay consistent between user sessions.',
         learnings: 'Learned how to make API calls using Javascript',
         github: 'https://github.com/ttmenezes/homepage',
-        tile_icon: './img/homepage.png',
+        tile_icon: './img/homepage-adjusted.jpg',
         image: ''
     },
     tigerlink: {
@@ -57,7 +73,7 @@ const projectDescriptions = {
         description: 'Worked with three of my friends to create a web application to potentially be used by the student body at Princeton. The application is a platform which enables students to select an activity they want to do with either a partner or a group, and then get either paired with a partner or placed into a group.',
         learnings: 'Learned React.js and bettered my UX design skills',
         github: 'https://github.com/sahil-a/tiger-link',
-        tile_icon: './img/TigerLink-home-square.png',
+        tile_icon: './img/tigerlink-adjusted.jpg',
         image: ''
     }
 }
@@ -236,20 +252,4 @@ soccerCont.addEventListener('mouseout', e => {
 })
 
 
-
-
-
-// const tiles = document.querySelectorAll('.tile');
-// const portfolioHeadingText = document.querySelector('#portfolio-heading-text');
-
-// tiles.forEach((tile) => {
-//     tile.addEventListener('mouseover', (e) => {
-//         const img = tile.querySelector('img');
-//         portfolioHeadingText.textContent = img.getAttribute('alt');
-//     });
-//     tile.addEventListener('click', (e) => {
-//         modal.style.display = "block";
-//         modalHeaderText =
-//     });
-// })
 

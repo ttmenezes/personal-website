@@ -265,6 +265,11 @@ img {
   align-items: center;
 }
 
+#loader-icon {
+  width: 160px;
+  height: auto;
+}
+
 #modal-technologies {
   display: flex;
   flex-direction: column;
@@ -651,3 +656,30 @@ img {
   visibility: visible;
 }
 /* End of Tooltip container */
+
+/* loader - credit: https://www.geeksforgeeks.org/how-to-show-page-loading-div-until-the-page-has-finished-loading/ */
+#loader-spinner {
+  position: absolute;
+  border: 12px solid rgba(104, 104, 104, 0.5);
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 200px;
+  height: 200px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* end loader */
