@@ -79,6 +79,15 @@ const projectDescriptions = {
         github: 'https://github.com/sahil-a/tiger-link',
         tile_icon: './img/tigerlink-adjusted.jpg',
         image: ''
+    },
+    website: {
+        name: 'Personal Website',
+        subtitle: 'trivan.me',
+        languages_technologies: ['html/css/js'],
+        description: 'Designed and built a personal website (frontend) from scratch. Deployed using Netlify.',
+        learnings: 'Bettered my frontend design and development skills and learned how to implement parallax animations.',
+        github: 'https://github.com/ttmenezes/personal-website',
+        tile_icon: './img/website.jpg'
     }
 }
 
