@@ -31,6 +31,15 @@ const projectDescriptions = {
         tile_icon: './img/nat-team-square.png',
         image: ''
     },
+    music_me: {
+        name: 'music.me',
+        subtitle: 'Hackathon Project',
+        languages_technologies: ['html/css/js','mathematica'],
+        description: 'Worked with three of my friends to build a web app which curates music playlist sequences depending on the user\'s schedule. The user logs in to Google Calendar, and then the app parses the keywords from each event in the calendar and feeds them to a machine-learning classifier (created with Wolfram Mathematica). The classifier is trained to label the keywords according to the appropriate genre for the given event. The program then fetches Spotify (via the Spotify API) playlists using the genres and returns them to the user.',
+        learnings: 'This was my first experience working with the Wolfram API and Spotify API. I was not previously aware of the ease with which one can create an API directly from an online Wolfram Mathematica notebook. It was a really insightful experience linking together so many different APIs into a single application.',
+        github: 'https://github.com/ATLi2001/PennApps-2020',
+        tile_icon: './img/music-me.jpg'
+    },
     etymology_graph: {
         name: 'Etymology Graph Analyzer',
         languages_technologies: ['python', 'cytoscape'],
